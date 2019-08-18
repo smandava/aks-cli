@@ -9,8 +9,8 @@ RUN  curl -fsSL https://storage.googleapis.com/kubernetes-release/release/v1.14.
     && echo -e "\n" >> ~/.bashrc \
     && echo "source /usr/share/bash-completion/bash_completion" >> ~/.bashrc \
     && echo "source <(kubectl completion bash)" >> ~/.bashrc \
-    && curl -fsSL https://releases.hashicorp.com/terraform/0.11.3/terraform_0.11.3_linux_amd64.zip -o ./terraform_0.11.3_linux_amd64.zip \
-    && unzip terraform_0.11.3_linux_amd64.zip \
+    && curl -fsSL https://releases.hashicorp.com/terraform/0.12.6/terraform_0.12.6_linux_amd64.zip -o ./terraform_0.12.6_linux_amd64.zip \
+    && unzip terraform_0.12.6_linux_amd64.zip \
     && mv terraform /usr/bin \
-    && rm terraform_0.11.3_linux_amd64.zip \
+    && rm terraform_0.12.6_linux_amd64.zip \
     && apk add --no-cache bash-completion
